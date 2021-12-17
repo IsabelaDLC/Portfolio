@@ -1,0 +1,315 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0px;
+}
+
+.header {
+    padding-top: 40px;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    padding-right: px;
+}
+
+img {
+    margin-bottom: 10px;
+    box-shadow: 10px 10px;
+}
+
+/* https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css */
+
+
+.container1 {
+    width: 650px;
+    height: auto;
+}
+
+.heroimage img {
+    width: auto;
+    height: 950px;
+}
+
+.active {
+    width: 650px;
+    height: auto;
+}
+
+/* https://codepen.io/QDeltaE/pen/VWGYOB */
+
+.static {
+    position:absolute;
+    background: white;
+}
+  
+.static:hover {
+    opacity:0;
+}
+
+h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 200px;
+    line-height: 180px;
+    padding-left: 50px;
+    padding-right: 200px;
+    padding-top: 100px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 80px;
+    line-height: 120px;
+    font-weight: 400;
+}
+
+.skills-list { 
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 25px;
+    padding-left: 135px;
+    list-style: circle
+}
+
+/* https://codepen.io/Zeindelf/pen/vZbyEg */
+
+.button {
+   font-family: 'IBM Plex Mono', monospace; 
+   font-size: 25px;
+   width: 475px;
+   align-self: center;
+   border-radius: 50px;
+   padding: 10px;
+   background-color:white;
+   cursor: pointer;
+   box-shadow: 5px 10px;
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 144);
+}
+
+.readmore {
+   font-family: 'IBM Plex Mono', monospace; 
+   font-size: 25px;
+   width: 225px;
+   align-self: auto;
+   border-radius: 50px;
+   padding: 17px;
+   background-color:white;
+   cursor: pointer;
+   box-shadow: 5px 10px;
+}
+
+.button:active {
+    background-color: rgb(255, 255, 144)
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+ul.top5 {
+    font-family:'Inknut Antiqua', serif;
+    font-size: 80px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 190px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+}
+
+.top5section {
+    display:flex;
+    justify-content: center;
+}
+
+/* START: NAVIGATION BAR */
+
+nav {
+    float: center;
+    background-color: rgb(255, 255, 144);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.rightnavbar{
+    float: center;
+    background-color: rgb(255, 255, 144);
+    padding-right: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav img {
+    display: flex;
+    clear: both;
+    height: 30px;
+    box-shadow: none;
+    padding-top: 0px;
+}
+
+nav ul {
+    display: flex;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 35px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+/* END: NAVIGATION BAR */
+
+.Section1Image img {
+    height: 830px;
+    width: auto;
+    box-shadow: white 20px 20px;
+    margin-bottom: 30px;
+}
+
+.project1 {
+    display:flex;
+    padding: 5%;
+    background-color:rgb(255, 255, 144);
+    width: 100%;
+}
+
+.section1 {
+    display:flex;
+    flex-direction:column;
+    align-content: left;
+    width: 40%;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.section1text {
+    display:flex;
+    flex-direction:column;
+    align-content: right;
+    width: 40%;
+    border: 5px solid black;
+    background-color: white;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.section2Image img{
+    height: 830px;
+    box-shadow: black 20px 20px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+
+}
+
+.project2 {
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section2 {
+    display:flex;
+    flex-direction:column;
+    align-content: left;
+    width: 40%;
+}
+
+.section2text {
+    display:flex;
+    flex-direction:column;
+    align-content: right;
+    width: 35%;
+    border: 5px solid black;
+    background-color: white;
+    font-size: 30px;
+    padding: 50px;
+    margin: 135px;
+}
+
+.section3Image img {
+    height: 830px;
+    width: auto;
+    box-shadow: white 20px 20px;
+}
+
+.project3 {
+    display:flex;
+    padding: 5%;
+    background-color:rgb(255, 255, 144);
+    width: 100%;
+}
+
+.section3 {
+    display:flex;
+    flex-direction:column;
+    align-content: right;
+    font-size: 30px;
+}
+
+.section3text {
+    border: 5px solid black;
+    background-color: white;
+    font-size: 30px;
+    padding: 50px;
+    width: 40%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+
+.fab {
+    font-size: 60px;
+    color: blue;
+}
